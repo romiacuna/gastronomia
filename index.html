@@ -7,105 +7,186 @@
     <title>Gastronomía Keto</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation-icons.svg">
   </head>
 
   <body>
-    <div class="grid-container contenedor grid-y large-12 medium-12">
 
+    <div class="row grid-container contenedor"><!-- Contenedor verde transparente-->
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 medium-5 small-12 text-right header-top">
-          <h2 class="text-left">Gastronomía Keto</h2>
-          <br>
-          <h5>Blog de recetas y más</h5>
+      <div class="row grid-x"> <!-- Primera fila con sólo el ** Tampoco pude apreciar del todo si no estaba el título en pantallas pequeñas, pero lo dejé porque se veía raro sin título -->
+        <div class="large-4 medium-5 small-11 cell header-top"><!-- Celda título-->
+              <h2 class="text-left">Dieta Keto</h2>
+              <br>
+              <h5 class="text-right">Blog de recetas y más</h5>
         </div>
-
+        <div class="column medium-7 large-8 header-top cell hide-for-small-only">
+        </div>
       </div>
 
-      <div class="large-4 medium-5 small-12 grid-x grid-padding-x grid-container cell"><!-- Columna izquierda 4 col -->
-        <div class="grid-x grid-padding-x cell">
-          <form>
-            <div class="large-12 medium-12">
-              <label>
-                <i class="glyph magnifying-glass size-36"></i><input type="text" name="nombre" id="buscar" placeholder="Buscar" class="form-control input-element">
-              </label><!-- Aún no se ve el ícono de la lupa -->
+      <div class="row grid-x grid-container"><!-- Segunda fila con todo el resto del contenido -->
+        <div class="column large-4 medium-4 cell small-order-2 medium-order-1"> <!-- Celda columna izquierda ** No me quedó claro si esta columna debía desaparecer por completo en pantallas pequeñas así es que la dejé al final -->
+          <div class="grid-x cell fondos-internos"><!-- Celda búsqueda-->
+            <div class="large-2 medium-2 text-center">
+              <i class="fi-magnifying-glass"></i>
             </div>
-          </form>
-        </div>
-        <div class="large-12 medium-12 cell">
-          <ul class="menu vertical">
-            <li><a href="#"><b>Inicio</b></a></li>
-            <li><a href="#"><b>Mi plato perfecto</b></a></li>
-            <li><a href="#"><b>Mis recetas</b></a></li>
-            <li><a href="#"><b>Favoritos:</b></a></li>
-          </ul>
-        </div>
-
-        <div class="large-4 medium-5 cell">
-
-          <div class="grid-x row grid-padding-x large-4"> <!-- Fila 1 imagenes -->
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img1.jpg" alt="" class="imagenes">
-            </div>
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img2.jpg" alt="" class="imagenes">
-            </div>
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img3.jpg" alt="" class="imagenes">
+            <div class="large-10 medium-10 small-11 fondos-internos">
+              <form>
+                <label>
+                  <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="form-control input-element align-middle">
+                </label>
+              </form>
             </div>
           </div>
-          <div class="row grid-x grid-padding-x"><!-- Fila 2 imagenes -->
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img4.jpg" alt="" class="imagenes">
+          <div class="large-4 medium-4 cell relleno-columna cell fondos-internos"> <!-- Celda lista navegación -->
+            <ul class="menu vertical menu-navegacion">
+              <li class="is-active"><a href="#">Inicio</a></li>
+              <li><a href="#">Mi plato perfecto</a></li>
+              <li><a href="#">Mis recetas</a></li>
+              <li><a href="#">Favoritos:</a></li>
+            </ul>
+          </div>
+          <div class="large-4 medium-5 cell fondos-internos"><!-- Celda imágenes -->
+            <div class="grid-x row grid-padding-y"> <!-- Fila 1 imagenes -->
+              <div class="column large-4 medium-4 small-4 cell imagenes">
+                <img src="img/img1.jpg" alt="">
+              </div>
+              <div class="column large-4 medium-4 small-4 cell imagenes">
+                <img src="img/img2.jpg" alt="">
+              </div>
+              <div class="column large-4 medium-4 small-4 cell imagenes">
+                <img src="img/img3.jpg" alt="">
+              </div>
             </div>
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img5.jpg" alt=""class="imagenes">
-            </div>
-            <div class="column large-4 medium-4 small-4 cell">
-              <img src="img/img6.jpg" alt="" class="imagenes">
+            <div class="row grid-x"><!-- Fila 2 imagenes -->
+              <div class="column large-4 medium-4 small-4 cell">
+                <img src="img/img4.jpg" alt="" class="imagenes">
+              </div>
+              <div class="column large-4 medium-4 small-4 cell">
+                <img src="img/img5.jpg" alt=""class="imagenes">
+              </div>
+              <div class="column large-4 medium-4 small-4 cell">
+                <img src="img/img6.jpg" alt="" class="imagenes">
+              </div>
             </div>
           </div>
+          <!-- Historial-->
 
         </div>
 
-        <div class="">
+        <div class="column small-12 medium-8 large-8 cell small-order-1 medium-order-2"><!-- Celda columna derecha -->
+          <div class="large-12 medium-12 small-12 ">
+            <div class="grid-y grid-container large-8">
+              <article class="fondos-internos">
+                <div class="titulo-articulo">
+                  <h3>Lasaña Keto</h3>
+                  <h6>Domingo 11/08/2019</h6>
+                </div>
 
-        </div>
-        </div>
-      <div class="large-8 medium-7 small-12 cell"><!-- Columna ancha derecha col 8 -->
-        <div class="header-top">
+                <div class="callout">
+                  <img src="img/lasaña-keto.png" alt="Lasaña Keto">
+                </div>
+                <div class="texto-articulo text-justify">
+                  <p>Para preparar una lasaña keto sólo necesitas reemplazar todos los carbohidratos progress
+                  por vegetales o carnes. Considerando que lo más alto en carbohidratos en una lasaña es la pasta,
+                  te contamos que es posible reemplazarla con rodajas finas de berenjena o zapallo italiano (zuchini)
+                  cortados al máximo largo de este vegetal para cubrir la mayor cantidad de superficie posible al
+                  ir creando cada capa. Además (o en vez) de carne, se puede incorporar trozos de jamón o salame.</p>
+                </div>
+                <hr>
+                <div class="comentarios grid-x row">
+                  <div class="column large-2 medium-2 small-3 text-center contenedor-icono">
+                    <i class="fi-torso"></i>
+                  </div>
+                  <div class="column large-10 medium-10 small-9 text-right texto-articulo">
+                    <textarea name="comment" rows="2" placeholder="Escribe un comentario"></textarea>
+                    <a class="button" href="#">Enviar</a>
+                  </div>
+                  <div class="column large-1 medium-1 small-1"></div>
+                  <div class="column large-1 medium-1 small-2">
+                      <img src="img/avatar1.png" alt="">
+                  </div>
+                  <div class="column large-10 medium-10 small-9 texto-comentarios">
+                    <p>Buena forma de comer lasaña low carb</p>
+                    <hr>
+                  </div>
+                  <div class="column large-1 medium-1 small-1"></div>
+                  <div class="column large-1 medium-1 small-2">
+                    <img src="img/avatar3.png" alt="">
+                  </div>
+                  <div class="column large-10 medium-10 small-9 texto-comentarios">
+                    <p>El salame o peperoni le da un toque de sabor</p>
+                    <hr>
+                  </div>
+                  <div class="column large-1 medium-1 small-1"></div>
+                  <div class="column large-1 medium-1 small-2">
+                      <img src="img/avatar2.png" alt="">
+                  </div>
+                  <div class="column large-10 medium-10 small-9 texto-comentarios text-left">
+                      <p>Queda mejor sin carne</p>
+                  </div>
+                  </div>
 
-        </div>
-
-        <div class="grid-x grid-container large-8">
-          <article class="contenedor-interno">
-            <h3>Lasaña Keto</h3>
-            <img src="" alt="">
-          </article>
-          <div class="comentarios">
-
+            </article>
+                <hr>
+            <article class="fondos-internos">
+              <div class="titulo-articulo">
+                <h3>Tortilla de coliflor</h3>
+                <h6>Martes 13/08/2019</h6>
+              </div>
+              <div class="callout">
+                <img src="img/tortilla-de-coliflor.jpg" alt="Tortilla de Coliflor">
+              </div>
+              <div class="text-justify texto-articulo">
+                <p>Es el plato perfecto para la dieta Keto, porque consiste en un vegetal muy contundente como
+                lo es la coliflor, pero además contiene huevo, y queso. Además es exquisita. Para un toque se sabor
+                se le puede añadir cilantro o perejil en el batido de huevo junto con sal y pimienta</p>
+              </div>
+              <hr>
+              <div class="comentarios grid-x row">
+                <div class="column large-2 medium-2 small-3 text-center contenedor-icono">
+                  <i class="fi-torso"></i>
+                </div>
+                <div class="column large-10 medium-10 small-9 text-right texto-articulo">
+                  <textarea name="comment" rows="2" placeholder="Escribe un comentario"></textarea>
+                  <a class="button" href="#">Enviar</a>
+                </div>
+                <div class="column large-1 medium-1 small-1"></div>
+                <div class="column large-1 medium-1 small-2">
+                  <img src="img/avatar4.png" alt="">
+                </div>
+                <div class="column large-10 medium-10 small-9 texto-comentarios">
+                  <p>Es una receta exquisita y muy fácil</p>
+                  <hr>
+                </div>
+                <div class="column large-1 medium-1 small-1"></div>
+                <div class="column large-1 medium-1 small-2">
+                  <img src="img/avatar2.png" alt="">
+                </div>
+                <div class="column large-10 medium-10 small-9 texto-comentarios">
+                  <p>Mi favorita!</p>
+                  <hr>
+                </div>
+                <div class="column large-1 medium-1 small-1"></div>
+                <div class="column large-1 medium-1 small-2">
+                  <img src="img/avatar3.png" alt="">
+                </div>
+                <div class="column large-10 medium-10 small-9 texto-comentarios text-left">
+                  <p>Con queso parmesano rallado queda muy bien</p>
+                </div>
+              </div>
+            </article>
           </div>
-          <article class="contenedor-interno">
-            <h3>Tortilla de coliflor</h3>
-            <img src="" alt="">
-          </article>
-          <div class="comentarios">
-
+          <div class="show-for-small-only">
+            <hr>
           </div>
+          <div class="header-top hide-for-small-only"></div>
         </div>
 
-      </div>
-    </div>
+        </div><!-- Fin de la Celda columna derecha-->
+      </div><!-- Fin de la segunda fila-->
+    </div><!-- Fin del contenedor verde transparente -->
 
-
-
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
   </body>
-</html>
+  </html>
