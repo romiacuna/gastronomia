@@ -53,4 +53,52 @@ body {
 
 .texto-articulo{
   padding: 20px;
-}3
+}
+
+.fi-torso{
+  font-size: 72px;
+}
+
+
+h6{
+  font-style: italic;;
+}
+
+article{
+  padding: 30px;
+}
+
+hr.separador:after{
+    border: 2px;
+    color:  #d8d8d8;
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
+.menu-navegacion{
+  font-weight: bold;
+  line-height: 250%;
+}
+
+.relleno-columna{
+  padding-top: 15px;
+}
+
+h2{
+  font-size: 48px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h3{
+  font-size: 32px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
