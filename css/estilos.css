@@ -12,6 +12,12 @@ body {
   background-color: rgb(158,180,91,60%);
 }
 
+.header-top{
+  padding: 20px;
+  max-height: 250px;
+  min-height: 160px;
+}
+
 .fi-magnifying-glass{
   font-size: 36px;
   align-content: center;
@@ -20,4 +26,9 @@ body {
 .contenedor-icono{
   padding-bottom: 5px;
   margin-bottom: 10px;
+}
+
+.imagenes {
+  padding-right: 0.35rem;
+  padding-left: 0.35rem;
 }
